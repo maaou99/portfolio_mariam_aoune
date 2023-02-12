@@ -1,0 +1,78 @@
+#about{
+        
+      
+       text-align: center;
+       width: 100%;
+        
+    }
+        
+   #about>h1{
+  
+    font-size: 33px;
+
+   }
+
+
+#about > p{
+    padding-top: 4%;
+    text-align: justify;
+    margin: 0% 5%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    
+}
+
+ 
+
+.btn-about{
+     float: left;
+     margin-left: 5%;
+     margin-top:2%;
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+
+@media screen and (max-width: 1000px) {
+ 
+    #about > p{
+        margin: 0% 10%;
+
+    }
+    }
+
+    @media screen and (max-width: 800px) {
+     
+        #about > p{
+            padding-top: 5%;
+            margin: 0% 20%;    
+        }
+
+        #about{
+            padding-top: 8%;
+        }
+        }
+   
+    /* MEDIA QUERIES (SMALL DEVICES) */
+   
+   @media screen and (max-width: 600px) {
+ 
+      
+    #about > p{
+        padding-top: 8%;  
+    }
+
+
+    #about{
+        
+        padding-top: 10%;
+     }
+
+     .btn-about{
+    
+        margin-left: 20%;
+       
+        margin-top:10%;
+   }
+}
+   

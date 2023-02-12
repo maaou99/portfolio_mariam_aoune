@@ -1,0 +1,68 @@
+nav > a{
+    font-size: 20px;
+ padding: 10px 12px;
+     color: white;
+     transition: var(--transition)
+}
+
+nav>a:hover{
+    color: var(--color-boder-contactBox);
+}
+
+nav{
+    background-color: var(--color-nav);
+    width: fit-content;
+    left: 0;
+    margin-top: 2%;
+    margin-right: 5%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-left: 5%;
+    z-index: 1;
+    display:  flex;
+    gap: 0.5rem;
+    position: fixed;
+    backdrop-filter: var(--blur)
+}
+
+nav a.active{
+    color: var(--color-boder-contactBox);
+    background-color: var( --color-button);
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    nav{
+        padding: 5px 10px; 
+        gap: 0.8rem;
+    }
+
+    nav > a{
+       
+     padding: 5px 7px;
+      
+    }
+    
+
+    }
+
+    @media screen and (max-width: 800px) {
+        nav{
+            writing-mode: vertical-rl;   
+        }
+    
+        }
+   
+    /* MEDIA QUERIES (SMALL DEVICES) */
+   
+   @media screen and (max-width: 600px) {
+    nav{
+        writing-mode:horizontal-tb;
+        bottom: 0;
+        right: auto;
+        left: 20%;
+        margin-bottom: 10%;
+    }
+    
+     }
+

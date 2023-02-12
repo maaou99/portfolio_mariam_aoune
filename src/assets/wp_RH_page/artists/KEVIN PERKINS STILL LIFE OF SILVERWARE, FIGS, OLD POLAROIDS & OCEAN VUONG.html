@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/style_wp_rh.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Questrial" />
+</head>
+<body>
+    
+    <nav>
+        <div id="top-nav" class = "top-nav">
+        
+            <div id = 'img-nav' class= "img-nav">
+                <a href = "/index.html"> <img src="/RHF_LOGO_1.jpg" alt="RHF" width="140" height="50"> </a>
+            </div>
+         
+            <div id="nav1" class = "nav1 div-nav">
+                <span><a href = "/exhibitions/exhibitions_main.html">EXHIBITIONS</a></span>
+                <span><a style="font-weight: 900;" href = "/artworks/artworks.html">ARTWORKS</a></span>
+                <span><a href="/about/about.html">ABOUT</a></span>
+            </div>
+    
+            <div id="nav2" class = "nav2 div-nav hidden">
+                <div class="hidden-x-nav">
+                    <p onclick = 'removeNav()' style="color: white;  ">X</p>
+                </div>
+                <div class="hidden-text-nav">
+                  
+                    <p><a style="color: white;"  href = "/exhibitions/exhibitions_main.html">EXHIBITIONS</a></p>
+                    <p><a style="color: white;" href = "/artworks/artworks.html">ARTWORKS</a></p>
+                    <p><a style="color: white;" href="/about/about.html">ABOUT</a></p>
+                    <br>
+                    <p><a style="color: white;"  href = "/support/support.html">SUPPORT</a></p>
+                </div> 
+            </div>
+    
+            <div class="support-nav div-nav">
+                <span><a  href = "/support/support.html">SUPPORT</a></span>
+            </div>
+           
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" id="checkbtn">
+             
+                <img width="50%" height="50%" src = "/three-bars-thin.png" onclick="addNav()"></img>
+            </label>
+        </div>
+        </nav>
+   
+<div class=" grid-exhibition-artist grid-exhibition  "   >
+    <div id="text-story" class="text-story" style="position: relative;">
+        <div class="piece-exhibition" > 
+               <img class="piece-exhibition-img" src="/placeholder-image.png" width = "100%" alt="">
+           </div>
+    </div>
+
+    <div id="text-info" class="text-story" style="position: relative;" >
+        <div class="text-artwrk">
+                     
+            <p class="title-artwork" id="title">Lorem ipsum dolor 
+            </p>
+            <p style=" text-align:left;line-height: 5px;"> - 2017</p>
+            <p class="text-artwrk-artist"> Lorem ipsum dolor </p> 
+            
+            <p class="text-artwrk-info" >CONTE CRAYON AND CHARCOAL ON PAPER </p>
+            <p class="text-artwrk-info">30.5 X 35.5 CM ( 12” X 14” )</p>
+            <p class="text-artwrk-info" >Edition 1/1 </p>
+        </div>
+        
+        <aside class="aside-artwork-info">
+            <p class="aside-artwork-info-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum leo id massa ornare congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam vehicula risus id erat dictum sodales. Proin diam elit, interdum eget vehicula ac, vehicula quis massa. Aliquam dapibus tempor tortor, ut dignissim urna volutpat vitae. Fusce dictum rhoncus lectus, nec molestie lectus faucibus eu. Etiam vulputate magna at nibh congue tristique. Pellentesque convallis lectus id tempus bibendum. Aenean non scelerisque turpis, a cursus ante. Curabitur in ipsum sit amet nunc pretium pulvinar. Nullam posuere mollis dolor, ac mollis lacus ullamcorper quis. Mauris pretium quam odio, in blandit eros lobortis eget. Nam mollis interdum condimentum. Sed pellentesque felis in tortor mollis, nec vestibulum leo lacinia. Integer faucibus, ex quis fermentum ultricies, enim mi tincidunt tortor, in sodales odio urna et dolor. Ut orci metus, scelerisque at eros vel, gravida luctus ex.</p>
+           
+        </aside>
+    </div>
+    <div class="arrows-artists">
+        <!--Before-->  <a href="/artists/Rad Hourani UPPER-LOWER UPPER-MIDDLE-LOWER UPPER-MIDDLE.html"> <i class="arrow-artist left"></i></p>  </a><p>
+       <!--After-->   <a href="/artists/Rad Hourani one.html"><p> <i style="margin-left: 250px;" class="arrow-artist right"></i></p></a>
+      </div>
+</div>
+
+
+<br><br> 
+
+   
+<a href="https://www.neutral-world.com/"><div id="copyright" class="copyright "  style="">
+    <div id="copyright-text" class="copyright-text div-copyright">
+      <p  class ="copyright-symbol">©</p> 
+      <p class = "copyright-year">2022</p> 
+         <span class = "copyright-first-word">Neutral-World</span>
+         <span class = "copyright-world"> &nbsp &nbsp  </span>
+     </div> 
+  </div></a>
+ 
+  <script src="/script.js"></script>
+</body>
+</html>
