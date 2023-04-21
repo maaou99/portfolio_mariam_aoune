@@ -100,17 +100,17 @@ h1{
 
 section:not(.white-space){
    height: 100vh;
-   padding-bottom: 25%;
+   
 }
 
 section:not( #contact){
 
-  padding-top: 6%;
+  padding-top: 7%;
 
 }
 
 #contact{
-  padding-top: 10%;
+  margin-top: 30%;
 }
 ::-moz-selection { /* Code for Firefox */
   

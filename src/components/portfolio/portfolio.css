@@ -6,7 +6,7 @@
     height: 700px;   
     width: 1050px;
     padding-top: 2%;
-    margin: 0% 10%;
+    margin: 3% 10%;
     position: absolute;
     display: grid;
 
@@ -49,9 +49,10 @@
 }
  
 
- 
   #portfolio{
+    margin-top: 10%;
     margin-bottom: 10%;
+    
   }
 
   .content{

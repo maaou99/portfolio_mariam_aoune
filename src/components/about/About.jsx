@@ -4,7 +4,7 @@ import './about.css'
 function About() {
   return (
     <section id='about'>
-<br></br><br></br><br></br><br></br>
+<br></br><br></br> 
        <h1 className='title'>My <span>Story</span></h1>
 
        <p> Hey, I'm glad you've stumbled upon me! I'm a Bachelor of Design and Computation Arts student at Concordia University, where I am constantly learning and growing my knowledge. My interests in the field of web design range from UX design to front-end web development, two of the most important areas of web design. I'm always excited to use my skills and learn new concepts and I'm actively looking for internships that will give me the chance to learn and grow.</p>

@@ -11,7 +11,6 @@ const WorkPortfolio = (props) => {
 
 
     <section id='portfolio'>
-    <section className='white-space'></section>
 
     <div className="portfolio-work ">
         
