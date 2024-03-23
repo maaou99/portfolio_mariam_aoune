@@ -140,7 +140,8 @@
      
     .services{
        
-        width: 500px;
+        width: 600px;
+        padding-top: 20%;
     }
 
     .services-2nd-level > button:nth-child(2){
@@ -176,7 +177,7 @@
     @media screen and (max-width: 600px) {
      
         .services{
-
+            padding-top: 32%;
             width: 300px;
         }
     

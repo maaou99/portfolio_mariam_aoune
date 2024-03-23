@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fira+Sans&family=Questrial&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
 *{
   margin: 0;
   padding: 0;
-  backdrop-filter: 50px;
+ 
   box-sizing: border-box;
   border: 0;
   outline:0;
+  background-color:#F6F4D2;
   list-style: none;
   text-decoration: none;
+  font-optical-sizing: auto;
+font-family: var(--font-unbounded);
 
 }
 
-@font-face {
-  font-family: "Carmenta";
-  src: url("./assets/Carmenta/Carmenta\ Regular\ 2.00.ttf") format('ttf');
-  src: url("./assets/Carmenta/Carmenta\ Italic\ 2.00.ttf") format('ttf');
-  }
+ 
 
  
 
@@ -24,18 +23,12 @@ html{
   scroll-behavior: smooth;
   scrollbar-width: thin;
 scrollbar-color: #cf8de93d;
+ 
 }
 
 #app{
   
-  background-color:hsla(264,32%,81%,1);
-  background-image:
-  radial-gradient(at 44% 73%, hsla(222,71%,77%,1) 0px, transparent 50%),
-  radial-gradient(at 81% 81%, hsla(325,68%,75%,1) 0px, transparent 50%),
-  radial-gradient(at 84% 33%, hsla(206,81%,77%,1) 0px, transparent 50%),
-  radial-gradient(at 26% 25%, hsla(317,50%,81%,1) 0px, transparent 50%),
-  radial-gradient(at 15% 84%, hsla(211,58%,75%,1) 0px, transparent 50%),
-  radial-gradient(at 54% 37%, hsla(304,69%,67%,1) 0px, transparent 50%);
+ 
  
   
 }
@@ -45,6 +38,7 @@ body{
    min-height: 100vh;
   font-family: Questrial; 
   color: var(--color-text);
+
 }
 
 ::-webkit-scrollbar{
@@ -64,19 +58,32 @@ body{
 
 :root{
   --color-text: white;
-  --color-button:rgba(255, 255, 255, 0.307);
-  --color-nav: rgba(255, 255, 255, 0.164); 
-  --color-font-loadingPage: #8DBFE9;
-  --border-radius-expertise: 3px;
-  --color-boder-contactBox: #5890D1;
-  --color-text-contactBox: rgba(255, 255, 255, 0.464);
-  --color-pink: #f8cdeb;
+  --color-turquoise:#5EB1BF;
+  --color-orange:#FF8552;
+  --color-beige:#F6F4D2;
+  --color-grey:#636564;
+  --fontSize-H1-Azeret: 56px;
+  --fontSize-H2-Azeret: 48px;
+  --fontSize-H3-Azeret: 40px;
+  --fontSize-H1-Unbounded: 56px;
+  --fontSize-H2-Unbounded: 48px;
+  --fontSize-H3-Unbounded: 40px;
+  --fontSize-H4-Unbounded: 32px;
+  --fontSize-H5-Unbounded: 24px;
+  --fontSize-H6-Unbounded: 20px;
+  --fontSize-Large-Unbounded: 20px;
+  --fontSize-Medium-Unbounded: 18px;
+  --fontSize-Small-Unbounded: 14px;
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --containder-width-sm: 90%;
-  --transition: all 400ms ease ;
-  --font-carmenta: 'Carmenta', Arial, sans-serif;
+  --transition: all 300ms ease ;
+  --font-unbounded: "Unbounded", sans-serif;
+  --font-azeret: "Azeret Mono", monospace;
   --blur: blur(35px);
+  --border-radius: 20px;
+  
+ 
  
 
 }
@@ -103,15 +110,9 @@ section:not(.white-space){
    
 }
 
-section:not( #contact){
+ 
+ 
 
-  padding-top: 7%;
-
-}
-
-#contact{
-  margin-top: 30%;
-}
 ::-moz-selection { /* Code for Firefox */
   
   background: var(--color-font-loadingPage) ;
@@ -122,11 +123,6 @@ section:not( #contact){
   background:var(--color-font-loadingPage);
 }
  
-
-section > h2, section > h5{
-  text-align: left;
-}
-
 .text-light{
   font-weight: 100;
   letter-spacing: 1.5px;
@@ -144,10 +140,6 @@ section > h2, section > h5{
 }
 
 
-.btn:hover{
-   background-color: var(--color-text-contactBox);
-   color: var( --color-boder-contactBox) ;
-}
 
 img{
   display: block;

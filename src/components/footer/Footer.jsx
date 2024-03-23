@@ -20,6 +20,7 @@ function Footer() {
       
 <div className="footer_copyright">
   <small>&copy; 2023 Mariam Aoune. All rights reserved.</small>
+  
 </div>
      
      </footer>
