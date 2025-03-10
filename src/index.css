@@ -7,11 +7,11 @@
   box-sizing: border-box;
   border: 0;
   outline:0;
-  background-color:#F6F4D2;
   list-style: none;
   text-decoration: none;
   font-optical-sizing: auto;
-font-family: var(--font-unbounded);
+  font-family: var(--font-unbounded);
+ 
 
 }
 
@@ -27,8 +27,7 @@ scrollbar-color: #cf8de93d;
 }
 
 #app{
-  
- 
+  min-height: 2000px;
  
   
 }
@@ -38,6 +37,7 @@ body{
    min-height: 100vh;
   font-family: Questrial; 
   color: var(--color-text);
+  background-color:#F6F4D2;
 
 }
 
@@ -54,26 +54,25 @@ body{
   background-color: white;
 }
 
-
-
+ 
 :root{
   --color-text: white;
   --color-turquoise:#5EB1BF;
   --color-orange:#FF8552;
   --color-beige:#F6F4D2;
   --color-grey:#636564;
-  --fontSize-H1-Azeret: 56px;
+  --fontSize-H1-Azeret:  6.1vw;
   --fontSize-H2-Azeret: 48px;
   --fontSize-H3-Azeret: 40px;
-  --fontSize-H1-Unbounded: 56px;
+  --fontSize-H1-Unbounded: 80px;
   --fontSize-H2-Unbounded: 48px;
-  --fontSize-H3-Unbounded: 40px;
+  --fontSize-H3-Unbounded: 3.1vw;
   --fontSize-H4-Unbounded: 32px;
   --fontSize-H5-Unbounded: 24px;
   --fontSize-H6-Unbounded: 20px;
   --fontSize-Large-Unbounded: 20px;
   --fontSize-Medium-Unbounded: 18px;
-  --fontSize-Small-Unbounded: 14px;
+  --fontSize-Small-Unbounded: 1vw;
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --containder-width-sm: 90%;
@@ -102,7 +101,7 @@ h1, h2, h3, h4, h5{
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 5.5rem;
 }
 
 section:not(.white-space){
@@ -130,7 +129,7 @@ section:not(.white-space){
 
  button{
   background-color: var(--color-button);
-  transition: var(--transition) ;
+
   color: var(--color-text);
   display: inline-block;
   padding: 0.5rem 1rem;

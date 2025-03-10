@@ -1,4 +1,9 @@
-h1{
+ #homepage{
+  overflow: hidden;
+  position: relative;
+ }
+
+.focus-in-expand{
 
     color: rgb(255, 255, 255);
     font-size: var(--fontSize-H1-Azeret);
@@ -63,10 +68,12 @@ h1{
   #center > button {
     background-color: var(--color-orange);
     border-radius: var(--border-radius);
-    padding: 5% 20%;
+    padding: 3% 20%;
     margin-top: 10%;
     opacity: 0;
     animation: opac 0.5s linear 2s forwards;
+    transition: 1s ease;
+  
   }
   
  @keyframes opac {
@@ -94,8 +101,8 @@ h1{
   border-radius: var(--border-radius);
 }
 
-button:hover {
-   letter-spacing: 5px; /* Change this to your desired hover background color */
+#center > button:hover {
+  letter-spacing: 3px; /* Change this to your desired hover background color */
 }
 
 

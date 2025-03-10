@@ -1,0 +1,103 @@
+
+#cards {
+   
+    background-color: var(--color-beige);
+    display: flex;
+ 
+    justify-content: center;
+    overflow-y: hidden;
+    padding-bottom: 7%;
+}
+
+.card {
+    position: relative;
+    background-color: var(--color-turquoise);
+    border-radius: 10px;
+    margin: 0% 3% ;
+    padding: 30px;
+    height: 450px;
+    width: 300px;
+}
+
+/* Style the title of each card */
+.card > h2{
+    position: absolute;
+    font-size: var(--fontSize-H3-Unbounded);
+    bottom: 0;
+    right: 0;
+    padding: 3% 8%;
+    font-weight: 800;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.icons{
+    
+    width: 50px;
+    display: flex; /* Add flex display */
+  }
+
+
+  blockquote {
+    
+    font-size: 14px;
+  
+padding-left: 15%;
+padding-top: 3%;
+
+    line-height: 1.45;
+    position: relative;
+   
+    }
+    
+    blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 100px;
+    position: absolute;
+    left: -20px;
+    top: -30px;
+    color: #7a7a7a;
+    }
+
+    cite{
+        padding: 5%;
+        font-size: 0.9vw;
+        float: right;
+    }
+
+    @media screen and (max-width: 960px) {
+        .card {
+
+            height: 500px;
+            width: 300px;
+        }
+
+        blockquote {
+    
+            font-size: 13px;
+           
+            }      
+    
+    }
+
+    @media screen and (max-width: 660px) {
+ 
+           
+            #cards {   
+                display: block;
+         
+            }
+
+            .card {
+                height: 400px;
+              
+            }
+    
+            
+    
+    }
+        

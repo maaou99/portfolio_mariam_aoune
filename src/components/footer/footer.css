@@ -1,83 +1,93 @@
-
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0; /* Remove default margin */
 }
-footer{
-    background-color: var(--color-nav) ;
-    padding: 4rem 0rem;
-   
-    position: static;
-    font-size: 0.9rem;
-    margin-top: auto;
+
+footer {
+    height: auto;
+    padding-top: 10%;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+#footer {
+    display: grid;
     bottom: 0;
-    width: 100%;
-
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto); /* Adjust height as needed */
 }
-
-.permalinks{
-     padding-left: 10%;
-     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-footer a{
-    color: var( --color-text);
-    text-decoration: none;
-    
-   
-}
-
-footer a:not(a:nth-child(3)){
-  
-   margin-top: 15%;
-}
-
-footer a:nth-child(3){
-    writing-mode: vertical-rl;
-text-orientation: upright;
-   padding-right: 90%;
  
+.cell0{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    grid-column: span 3; /* Span 3 columns */
+    grid-row: span 2; /* Span 2 rows */
+    background-color: var(--color-orange);
+    color: var(--color-grey);
+    text-align: center; /* Center the text horizontally */
+}
+
+.square{
+    width: 60px;
+    height: 60px;
+    transform: rotate(45deg);
+    background-color: var(--color-orange);
+    margin: 20px;
+}
+
+.cell1 > p{
+    font-weight: 300;
+    font-size: 13px;
+    padding: 2% 4%;
+    text-align: justify;
+}
+
+.cell0 > h1{
+ 
+
+    font-size: 12.3vw;
+}
+.cell1{
+    padding: 3%;
+    grid-row: span 2; /* Span 2 rows */
+    background-color: var(--color-grey);
+}
+
+.cell2{
+  
     
+    display: flex;
    
+    grid-column: span 4; /* Span 2 rows */
 }
 
-.footer_copyright{
-    float: left;
-    padding-left: 3%;
-    padding-top:2%
+.cell6{
+    background-color: var(--color-grey);
+    grid-column: span 4; /* Span 2 rows */
+    font-weight: 100;
 }
 
-@media screen and (max-width: 1024px) {
-    .permalinks{
+ 
+
+@media screen and (max-width: 960px) {
+ 
+    .cell1 > p{
        
-        padding-left: 10%;
-        display: grid;
-       grid-template-columns: 1fr 1fr 1fr 1fr;
-
-   }
-
-   footer {
-    margin-top: 700px;
-    bottom: 0;
-    
-   }
-
+        font-size: 10px;
+       
+    }
  
 }
 
 @media screen and (max-width: 950px) {
-    .permalinks{
-       
-        padding-left: 10%;
-        display: grid;
-       grid-template-columns: 1fr 1fr 1fr 1fr;
-
-   }
+ 
 
    footer {
-    margin-top: 1300px;
+  
     bottom: 0;
     
    }
@@ -87,83 +97,5 @@ text-orientation: upright;
 
 
 
-
-@media screen and (max-width: 840px) {
-    .container.contact_container{
-        padding-top: 50%;
-        
-       
-   
-   
-   }
-
-   .permalinks{
-       
-   
-   grid-template-columns: 1fr 1fr 1fr ;
-
-}
-
-   footer {
-    margin-top: 1000px;
-    bottom: 0;
-    
-   }
-
-
-
-
-.content{
-    padding: 10% 15%;
-  }
-
-}
-
-@media screen and (max-width: 750px) {
  
-    .container.contact_container{
-        padding-top: 150%;
-        
-       
-   
-   
-   }
-
-   footer {
-    margin-top: 1800px;
-    bottom: 0;
-    
-   }
- 
-}
-
-@media screen and (max-width: 600px) {
-
-    .permalinks{
-       
-   
-        grid-template-columns: 1fr 1fr  ;
-     
-     }
-
-     .container.contact_container{
-        padding-top: 220%;
-        
-       
-   
-   
-   }
-}
-
-@media screen and (max-width: 500px) {
-
-
-    .permalinks{
-       
-   
-        grid-template-columns: 1fr  ;
-     
-     }
-}
-
  
